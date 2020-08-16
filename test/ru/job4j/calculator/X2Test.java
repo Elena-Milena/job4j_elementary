@@ -21,7 +21,7 @@ public class X2Test {
     public void whenBCZero2() {
         int a = 1, b = 1, c = 1, d = 1;
 
-        int expected = 1;
+        int expected = 28;
 
         int result = X2.calc(a, b, c, d);
         assertThat(result, is(expected));
@@ -31,7 +31,7 @@ public class X2Test {
     public void whenBCZero3() {
         int a = 0, b = 1, c = 1, d = 1;
 
-        int expected = 1;
+        int expected = 98;
 
         int result = X2.calc(a, b, c, d);
         assertThat(result, is(expected));
@@ -41,7 +41,7 @@ public class X2Test {
     public void whenBCZero4() {
         int a = 1, b = 1, c = 0, d = 1;
 
-        int expected = 1;
+        int expected = 455;
 
         int result = X2.calc(a, b, c, d);
         assertThat(result, is(expected));
