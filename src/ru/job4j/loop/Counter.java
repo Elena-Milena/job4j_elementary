@@ -13,7 +13,7 @@ public class Counter {
 
     public static void main(String[] args) {
         System.out.println(sum(0, 5));
-        System.out.println(sum(2, 9));
+        System.out.println(sum(2, 8));
         System.out.println(sum(1, 1));
     }
 }
