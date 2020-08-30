@@ -9,7 +9,7 @@ import static org.junit.Assert.*;
 public class MortgageTest extends TestCase {
     @Test
     public void testWhenYear2() {
-        int year = Mortgage.year(100, 120, 50);
+        int year = Mortgage.year(100, 120, 1.5);
         assertThat(year, is(2));
     }
     @Test
