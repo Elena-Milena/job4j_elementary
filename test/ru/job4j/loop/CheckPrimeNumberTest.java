@@ -13,8 +13,8 @@ public void testWhen5() {
         assertThat(rsi, is(true));
     }
     @Test
-    public void testWhen4() {
-        boolean rsl = CheckPrimeNumber.chek(4);
+    public void testWhen0() {
+        boolean rsl = CheckPrimeNumber.chek(0);
         assertThat(rsl, is(false));
     }
     @Test
