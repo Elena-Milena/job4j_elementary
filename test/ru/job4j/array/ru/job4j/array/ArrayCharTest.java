@@ -8,7 +8,7 @@ public class ArrayCharTest extends TestCase {
     @Test
     public void testWhenStartWithPrefixThenTrue() {
         char[] word = {'T', 'e', 's', 't'};
-        char[] pref = {'T', 'e', 's', 't'};
+        char[] pref = {'T', 'e'};
         boolean result = ArrayChar.startsWith(word, pref);
         assertThat(result, is(true));
     }
@@ -16,7 +16,7 @@ public class ArrayCharTest extends TestCase {
     @Test
     public void testWhenNotStartWithPrefixThenFalse() {
         char[] word = {'T', 'e', 's', 't'};
-        char[] pref = {'T', 'i', 'w', 'f'};
+        char[] pref = {'T', 'i', 'y'};
         boolean result =ArrayChar.startsWith(word, pref);
         assertThat(result, is(false));
     }
