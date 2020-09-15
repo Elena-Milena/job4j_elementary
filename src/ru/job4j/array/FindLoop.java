@@ -13,18 +13,12 @@ public class FindLoop {
     }
 
     public static int indexOf(int[] data, int el, int start, int finish) {
-        start = data[0];
-        finish = data.length-1;
         int rst = -1; /* если элемента нет в массиве, то возвращаем -1. */
-            int index = (start + finish) / 2;
-            if (data[index] == el) {
-                rst = index;
-            }
-            if (data[index] < el) {
-                rst = index + 1;
-            }
-            if (data[index] > el) {
-                rst = index - 1;
+            for (int index = start; index <= finish; index++) {
+                if (data[index] == el) {
+                    rst = index;
+                    break;
+                }
             }
         return rst;
         }

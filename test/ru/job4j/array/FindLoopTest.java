@@ -34,4 +34,14 @@ public class FindLoopTest extends TestCase {
         int expect = 3;
         assertThat(result, is(expect));
     }
+    @Test
+    public void testWhenNoFind() {
+        int[] input = new int[] {7, 1, 66, 93, 2};
+        int value = 67;
+        int start = 1;
+        int finish = 3;
+        int result = FindLoop.indexOf(input, value, start, finish);
+        int expect = 2;
+        assertThat(result, is(expect));
+    }
 }
