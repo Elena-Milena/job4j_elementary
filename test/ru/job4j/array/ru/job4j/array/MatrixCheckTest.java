@@ -25,4 +25,14 @@ public class MatrixCheckTest extends TestCase {
         boolean result = MatrixCheck.monoVertical(input, 2);
         assertThat(result, is(true));
     }
+    public void testWhenDiagonal() {
+     char[][] input = {
+             {'X', ' ', ' '},
+             {' ', 'X', ' '},
+             {' ', ' ', 'X'}
+     };
+     char[] result = MatrixCheck.extractDiagonal(input);
+     char[] expect = {'X', 'X', 'X'};
+     assertThat(result, is(expect));
+    }
 }
