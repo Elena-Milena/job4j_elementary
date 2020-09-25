@@ -16,4 +16,13 @@ public class MatrixCheckTest extends TestCase {
         boolean result = MatrixCheck.monoHorizontal(input, 1);
         assertThat(result, is(true));
     }
+    public void testWhenHasMonoVertical() {
+        char[][] input = {
+                {' ', ' ', 'X'},
+                {' ', ' ', 'X'},
+                {' ', ' ', 'X'}
+        };
+        boolean result = MatrixCheck.monoVertical(input, 2);
+        assertThat(result, is(true));
+    }
 }
